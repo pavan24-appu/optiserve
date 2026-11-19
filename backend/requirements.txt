@@ -3,6 +3,7 @@ uvicorn[standard]
 sqlalchemy
 psycopg2-binary
 pandas
+scipy
 numpy
 scikit-learn
 httpx
