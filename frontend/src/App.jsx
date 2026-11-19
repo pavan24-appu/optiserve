@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import Chart from 'chart.js/auto'
 import './styles.css'
  
-const API = import.meta.env.VITE_API || 'http://localhost:8000'
+const API = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 const call = (p, o) => fetch(API + p, o).then(async r => {
   if (!r.ok) throw new Error((await r.text()).slice(0, 140)); return r.json() })
 const usd = n => '$' + Math.round(n).toLocaleString()
