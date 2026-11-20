@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { API, C, ST, Cv, Num, accCfg, forecastCfg, timeCfg, usd } from './lib.js'
+import { API, C, ST, Cv, Num, accCfg, forecastCfg, timeCfg, usd } from './lib.jsx'
  
 export const SvcPick = ({ ov, svc, setSvc }) => <select value={svc || ''} onChange={e => setSvc(e.target.value)}>
   {(ov?.services || []).filter(s => s.n > 1).map(s => <option key={s.svc} value={s.svc}>{s.svc} · {s.n} × {s.itype}</option>)}</select>
