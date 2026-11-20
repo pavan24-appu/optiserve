@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { loadColor } from './lib.js'
+import { loadColor } from './lib.jsx'
  
 // Air-traffic-control view: servers = aircraft, workloads = incoming flights, AI = tower that reroutes traffic from overloaded servers.
 export default function Tower({ servers, loads, onPick }) {
