@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import './styles.css'
 import Tower from './tower.jsx'
 import { Forecast, Graveyard, Plan, Report, SvcPick, TimeMachine, WhatIf } from './pages'
-import { API, C, ST, Num, call, usd } from './lib.js'
+import { API, C, ST, Num, call, usd } from './lib.jsx'
  
 const PAGES = [['tower', 'Control tower'], ['grave', 'Server graveyard'], ['fc', 'Forecast'], ['plan', 'Capacity plan'], ['time', 'Time machine'], ['wi', 'What-if'], ['rep', 'Report']]
  
